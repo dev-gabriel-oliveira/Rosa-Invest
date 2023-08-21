@@ -1,0 +1,19 @@
+{{#> base}}
+    {{#*inline 'mainContent'}}
+      <h1>Detalhes do Produto</h1>
+
+      <hr>
+
+      <p><strong>Name: {{name}}</strong></p>
+      <p>ID: {{id}}</p>
+      <p>Disponibilidade: {{available_status}}</p>
+      <p>Destinação: {{destination}}</p>
+      <p>Taxa de Rentabilidade: {{profitability_rate}}%</p>
+      <p>Prazo Mínimo: {{minimum_deadline}} meses</p>
+      <p>Taxa de Administração: {{administration_rate}}%</p>
+
+      <hr>
+      
+      <a href="/list-products">Voltar para a Lista</a>
+    {{/inline}}
+{{/base}}
