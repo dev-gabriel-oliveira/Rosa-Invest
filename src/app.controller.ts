@@ -10,6 +10,7 @@ export class AppController {
   @Render('index')
   getHome(): void {}
 
+  /*
   // Get All
   @Get('/list-products')
   @Render('products/list-products')
@@ -41,13 +42,13 @@ export class AppController {
 
 
   // Update Page
-  /*@Get('/update-product-:id') // Rota para página de edição
+  @Get('/update-product-:id') // Rota para página de edição
   @Render('update-product')
   getUpdateProductPage(@Param('id') id: number) {
     const product = this.appService.getById(id); 
 
     return product;
-  }*/
+  }
 
   // Update Method
   @Get('/products/:id/update') // Rota para receber o formulário de edição
@@ -71,4 +72,5 @@ export class AppController {
     this.appService.delete(id);
     return res.redirect(`/list-products`);
   }
+  */
 }
