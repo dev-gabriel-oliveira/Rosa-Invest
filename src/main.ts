@@ -21,11 +21,10 @@ async function bootstrap() {
     .setTitle('Rosa Invest')
     .setDescription('Rosa Invest')
     .setVersion('1.0')
-    .addTag('products')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('docs', app, document);
+  SwaggerModule.setup('api', app, document);
   
-  await app.listen(3000);
+  await app.listen(8080);
 }
 bootstrap();

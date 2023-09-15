@@ -10,7 +10,6 @@ export class AppController {
   @Render('index')
   getHome(): void {}
 
-  /*
   // Get All
   @Get('/list-products')
   @Render('products/list-products')
@@ -72,5 +71,4 @@ export class AppController {
     this.appService.delete(id);
     return res.redirect(`/list-products`);
   }
-  */
 }
