@@ -5,7 +5,7 @@ import { Product } from './models';
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
-
+  /*
   @Get('/')
   @Render('index')
   getHome(): void {}
@@ -71,4 +71,5 @@ export class AppController {
     this.appService.delete(id);
     return res.redirect(`/list-products`);
   }
+  */
 }
